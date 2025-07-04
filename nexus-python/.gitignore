@@ -1,0 +1,8 @@
+.idea
+demo
+__pycache__
+data/knowledge/*
+data/upload/*
+
+.env
+*.pyc
