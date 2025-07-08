@@ -3,6 +3,8 @@ demo
 __pycache__
 data/knowledge/*
 data/upload/*
+build
+nexus_python.egg-info
 
 .env
 *.pyc
