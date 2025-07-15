@@ -67,7 +67,7 @@ If command not found, run `.venv\bin\activate` or `source .venv/bin/activate` fi
 ollama run deepseek-r1:1.5b
 ```
 ```bash
-llama run bge-m3:latest
+ollama run bge-m3:latest
 ```
 
 
