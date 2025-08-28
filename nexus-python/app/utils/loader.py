@@ -12,10 +12,12 @@ def load_files_from_folder(folder_path):
     :param folder_path: 文件夹路径
     :return: list
     """
+    text_loader_kwargs = {"autodetect_encoding": True}
     loaders = [
-        DirectoryLoader(folder_path, glob="**/*.txt", loader_cls=TextLoader),
+        DirectoryLoader(folder_path, glob="**/*.txt", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs),
         DirectoryLoader(folder_path, glob="**/*.pdf", loader_cls=PyPDFLoader),
-        DirectoryLoader(folder_path, glob="**/*.docx", loader_cls=UnstructuredWordDocumentLoader)
+        DirectoryLoader(folder_path, glob="**/*.docx", loader_cls=UnstructuredWordDocumentLoader),
+        DirectoryLoader(folder_path, glob="**/*.md", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs)
     ]
 
     docs = []

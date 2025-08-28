@@ -167,7 +167,7 @@ const CreateKnowledge = ({ visible, onClose, onCreate }) => {
             <Button icon={<UploadOutlined />}>选择文件</Button>
           </Upload>
           <div className="text-gray-500 text-xs mt-2">
-            支持 PDF, DOCX, TXT 等格式
+            支持 PDF, DOCX, TXT, Markdown 等格式
           </div>
         </Form.Item>
       </Form>
